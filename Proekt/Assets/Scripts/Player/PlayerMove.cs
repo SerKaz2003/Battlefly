@@ -28,12 +28,14 @@ public class PlayerMove : MonoBehaviour
             if (Input.GetKey(KeyCode.A))
             {
                 moveInput = -1;
+         
             }
             else
             {
                 if (Input.GetKey(KeyCode.D))
                 {
                     moveInput = 1;
+                 
                 }
                 else
                 {
@@ -46,12 +48,14 @@ public class PlayerMove : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 moveInput = -1;
+             
             }
             else
             {
                 if (Input.GetKey(KeyCode.RightArrow))
                 {
                     moveInput = 1;
+                   
                 }
                 else
                 {
