@@ -11,9 +11,13 @@ public class Water : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player"|| other.tag == "Bul")
+        if (other.tag == "Bul")
         {
             Destroy(other.gameObject);
+        }
+        if (other.tag == "Player")
+        {
+            other.gameObject.GetComponent<PlayerMove>().hp -= 1000;
         }
     }
 }
