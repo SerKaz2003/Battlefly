@@ -12,7 +12,7 @@ public class MapGenerator : MonoBehaviour
 
     void Start()
     {
-        PhotonNetwork.Instantiate(player.name, new Vector2(0, 11), Quaternion.identity);
+        PhotonNetwork.Instantiate(player.name, new Vector2(Random.Range(-5,5), 11), Quaternion.identity);
 
         for (int i = 0; i > -10; i--)
         {
@@ -21,10 +21,10 @@ public class MapGenerator : MonoBehaviour
                 PhotonNetwork.Instantiate(Water.name, new Vector2(x, i), Quaternion.identity);
             }
         }
-        for (int y = 0;y<10;y++)
+        for (float y = 0;y<10;y+=0.5f)
         {
  
-            for(int x = -7;x<7;x++)
+            for(float x = -7;x<7;x+=0.5f)
             {
                 int a =Random.Range(0, 2);
                 if (a == 1)
@@ -44,6 +44,7 @@ public class MapGenerator : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            PhotonNetwork.LeaveRoom();
             SceneManager.LoadScene(0);
         }
     }

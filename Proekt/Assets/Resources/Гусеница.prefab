@@ -234,7 +234,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 16
-  hp: 10
+  hp: 100
   name: {fileID: 5999829247213344606}
   health: {fileID: 5904726812127273470}
 --- !u!114 &-5410531765780500324
@@ -257,8 +257,6 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 4632100579741203584}
-  - {fileID: 7181826737010733729}
-  - {fileID: 7765523258854978797}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -322,7 +320,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2320473519328984554}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 0, z: 0}
+  m_LocalPosition: {x: -4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2320473520364555215}
@@ -535,7 +533,8 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 7181826737010733729}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0

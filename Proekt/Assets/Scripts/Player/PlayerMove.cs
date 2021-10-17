@@ -16,7 +16,7 @@ public class PlayerMove : MonoBehaviour
     public float checkRadius;
     public LayerMask whatIsGround;
 
-    public int hp = 10;
+    public int hp = 100;
 
     PhotonView view;
     public Text name;
@@ -69,11 +69,6 @@ public class PlayerMove : MonoBehaviour
             rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
 
 
-            if (hp <= 0)
-            {
-                PhotonNetwork.LeaveRoom();
-                SceneManager.LoadScene(0);
-            }
             if (isGrounded)
             {
                 if (Input.GetKeyDown(KeyCode.Space))

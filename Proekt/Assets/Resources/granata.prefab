@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98238445a01da614a959d6ce77ce19b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 4294279119385759510, guid: 58ad7d9016e8e994b9833eecc2d22326, type: 3}
 --- !u!114 &-457134700489046396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,8 +185,8 @@ MonoBehaviour:
   m_PositionModel:
     SynchronizeEnabled: 1
     TeleportEnabled: 1
-    TeleportIfDistanceGreaterThan: 3
-    InterpolateOption: 2
+    TeleportIfDistanceGreaterThan: 1
+    InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 1
     ExtrapolateOption: 0
@@ -193,7 +194,7 @@ MonoBehaviour:
     ExtrapolateIncludingRoundTripTime: 1
     ExtrapolateNumberOfStoredPositions: 1
   m_RotationModel:
-    SynchronizeEnabled: 1
+    SynchronizeEnabled: 0
     InterpolateOption: 1
     InterpolateRotateTowardsSpeed: 180
     InterpolateLerpSpeed: 5

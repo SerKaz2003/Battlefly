@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b753f2019b99554c920a87983fe0495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Earth: {fileID: 2593851668740908313, guid: dcb16178cd1fd0e4fb55a5dd724363c4, type: 3}
+  Earth: {fileID: 2354532942129951872, guid: 49402c7bb20e4b344b21e5d1a2def4ba, type: 3}
   Water: {fileID: 4667015065618528889, guid: 204e7d374d8217345b4be91abffb223f, type: 3}
   player: {fileID: 2320473519328670059, guid: a45ec7a8ffd273a40ba1501bbf4f6f30, type: 3}
 --- !u!82 &1557988659
